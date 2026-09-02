@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head><script>(function(w,i,g){w[g]=w[g]||[];if(typeof w[g].push=='function')w[g].push(i)})
+(window,'GTM-K3QN3TWK','google_tags_first_party');</script><script>(function(w,d,s,l){w[l]=w[l]||[];(function(){w[l].push(arguments);})('set', 'developer_id.dY2E1Nz', true);
+		var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s);j.async=true;j.src='/gk7x/';
+		f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer');</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Эмнэлгийн тойм бичг｜Эмнэлгийн мэдээлэл ба үйлчлүүлэгчдийн санал хүсэлт</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+<style>
+:root{
+  --primary:#0f766e;
+  --primary-dark:#115e59;
+  --primary-light:#14b8a6;
+  --bg:#f1f5f9;
+  --card:#ffffff;
+  --text:#1e293b;
+  --muted:#64748b;
+  --border:#e2e8f0;
+  --star:#f59e0b;
+  --danger:#dc2626;
+  --radius:14px;
+  --shadow:0 1px 3px rgba(15,23,42,.08),0 4px 14px rgba(15,23,42,.06);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue","Noto Sans",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+header{background:linear-gradient(135deg,#0f766e 0%,#115e59 100%);color:#fff;padding:18px 16px;box-shadow:0 2px 10px rgba(15,23,42,.15)}
+.header-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px}
+.brand .logo{font-size:30px}
+.brand h1{font-size:20px;margin:0;letter-spacing:.3px}
+.brand p{margin:0;font-size:12px;opacity:.85}
+.header-actions{display:flex;gap:8px;align-items:center}
+.container{max-width:1000px;margin:0 auto;padding:20px 16px 40px}
+.toolbar{display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap;align-items:stretch}
+.toolbar-row{display:flex;gap:10px;margin-bottom:18px;flex-wrap:wrap;align-items:center}
+.toolbar-row .left{flex:1;display:flex;gap:10px;flex-wrap:wrap;align-items:center;min-width:0}
+.toolbar-row .right{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.search-wrap{flex:1;min-width:220px;position:relative}
+.search-wrap input{width:100%;padding:11px 14px 11px 40px;border:1px solid var(--border);border-radius:12px;font-size:15px;background:#fff;box-shadow:var(--shadow);outline:none}
+.search-wrap input:focus{border-color:var(--primary-light);box-shadow:0 0 0 3px rgba(20,184,166,.15)}
+.search-wrap .sicon{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:16px}
+.select{appearance:none;-webkit-appearance:none;background:#fff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path fill='%2364748b' d='M6 8L0 0h12z'/></svg>") no-repeat right 12px center / 10px 7px;padding:11px 34px 11px 14px;border:1px solid var(--border);border-radius:12px;font-size:15px;font-weight:600;color:var(--text);box-shadow:var(--shadow);cursor:pointer;outline:none;font-family:inherit}
+.select:focus{border-color:var(--primary-light);box-shadow:0 0 0 3px rgba(20,184,166,.15)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:none;border-radius:12px;padding:10px 16px;font-size:14px;font-weight:600;cursor:pointer;transition:transform .12s,box-shadow .12s,background .15s;text-decoration:none;line-height:1.4}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:var(--primary);color:#fff;box-shadow:0 2px 8px rgba(15,118,110,.35)}
+.btn-primary:hover{background:var(--primary-dark)}
+.btn-secondary{background:#fff;color:var(--text);border:1px solid var(--border);box-shadow:var(--shadow)}
+.btn-secondary:hover{background:#f8fafc}
+.btn-danger{background:var(--danger);color:#fff}
+.btn-danger:hover{background:#b91c1c}
+.btn-small{padding:6px 12px;font-size:13px;border-radius:10px}
+.icon-btn{background:none;border:none;cursor:pointer;font-size:16px;padding:4px;border-radius:8px;opacity:.65}
+.icon-btn:hover{opacity:1;background:#f1f5f9}
+.filter-chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;align-items:center}
+.filter-chip{background:#fff;border:1px solid var(--border);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;transition:.12s;box-shadow:var(--shadow)}
+.filter-chip:hover{border-color:var(--primary-light);color:var(--primary)}
+.filter-chip.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px;margin-bottom:16px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
+.hcard{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;cursor:pointer;transition:transform .12s,box-shadow .15s;display:flex;flex-direction:column;gap:8px;border:1px solid transparent}
+.hcard:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(15,23,42,.12);border-color:var(--primary-light)}
+.hcard h3{margin:0;font-size:17px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{background:#ccfbf1;color:#0f766e;border-radius:999px;padding:2px 10px;font-size:12px;font-weight:600}
+.chip-type{background:#dbeafe;color:#1d4ed8}
+.hcard .addr{color:var(--muted);font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.score-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;padding-top:8px;border-top:1px dashed var(--border)}
+.score-num{font-weight:800;font-size:19px}
+.score-num .unit{font-size:12px;color:var(--muted);font-weight:600}
+.count-badge{background:#e2e8f0;color:#475569;border-radius:999px;padding:2px 10px;font-size:12px;font-weight:600;white-space:nowrap}
+.stars{position:relative;display:inline-block;font-size:15px;letter-spacing:2px;color:#cbd5e1;line-height:1;vertical-align:middle}
+.stars-big{font-size:22px}
+.stars-fg{position:absolute;left:0;top:0;overflow:hidden;white-space:nowrap;color:var(--star)}
+.stars-fg i{font-style:normal}
+.no-score{color:var(--muted);font-size:13px}
+.empty{text-align:center;padding:50px 20px;color:var(--muted)}
+.empty .big{font-size:52px;margin-bottom:10px}
+.empty h3{color:var(--text);margin:0 0 6px}
+.empty ol{display:inline-block;text-align:left;margin:10px auto 0;padding-left:20px}
+.back-btn{background:none;border:none;color:var(--primary);font-size:14px;font-weight:600;cursor:pointer;padding:6px 0;margin-bottom:12px;display:inline-flex;align-items:center;gap:4px}
+.back-btn:hover{text-decoration:underline}
+.detail-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap}
+.detail-head h2{margin:0 0 8px;font-size:22px}
+.info-rows{font-size:14px;color:#334155;display:grid;gap:6px;margin-top:10px}
+.info-rows .lbl{color:var(--muted);font-size:12px;display:inline-block;min-width:64px;font-weight:600}
+.score-card{display:flex;gap:24px;flex-wrap:wrap;align-items:center}
+.score-main{text-align:center;min-width:150px}
+.score-big{font-size:52px;font-weight:800;line-height:1;color:var(--primary)}
+.score-big .unit{font-size:18px;color:var(--muted);font-weight:600}
+.score-main .stars{display:block;margin-top:8px}
+.qavg-list{flex:1;min-width:240px;display:grid;gap:9px}
+.qavg{display:grid;grid-template-columns:140px 1fr 44px;align-items:center;gap:8px;font-size:13px;color:#334155}
+.qavg .bar{height:8px;background:#e2e8f0;border-radius:99px;overflow:hidden}
+.qavg .bar-fill{height:100%;background:linear-gradient(90deg,var(--primary-light),var(--primary));border-radius:99px}
+.qavg .val{text-align:right;font-weight:700}
+.section-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.section-title h3{margin:0;font-size:16px}
+.fb-item{border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+.fb-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.fb-date{font-size:13px;color:var(--muted)}
+.fb-score{font-weight:700;font-size:14px}
+.fb-comment{margin:8px 0 0;font-size:14px;background:#f8fafc;border-radius:8px;padding:8px 10px}
+.fb-ratings{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.fb-rating{background:#f1f5f9;border-radius:6px;padding:1px 8px;font-size:11px;color:#475569}
+.fb-rating b{color:var(--primary)}
+.map-wrap{border-radius:12px;overflow:hidden;border:1px solid var(--border);background:#e2e8f0;position:relative;aspect-ratio:16/9;min-height:200px}
+.map-wrap iframe{width:100%;height:100%;border:0;display:block}
+.map-link{position:absolute;top:8px;right:8px;background:rgba(255,255,255,.92);color:#0f766e;padding:4px 10px;border-radius:8px;font-size:12px;font-weight:600;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,.15)}
+.map-link:hover{background:#fff;color:var(--primary-dark)}
+.map-empty{display:flex;align-items:center;justify-content:center;flex-direction:column;color:var(--muted);font-size:14px;gap:6px;height:100%;min-height:160px}
+.overlay{position:fixed;inset:0;background:rgba(15,23,42,.5);display:flex;align-items:center;justify-content:center;padding:16px;z-index:60;backdrop-filter:blur(2px)}
+.overlay[hidden]{display:none}
+.modal{background:#fff;border-radius:18px;max-width:620px;width:100%;max-height:92vh;overflow-y:auto;padding:22px;box-shadow:0 20px 60px rgba(15,23,42,.3)}
+.modal-sm{max-width:440px}
+.modal h2{margin:0 0 16px;font-size:19px}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:13px;font-weight:600;color:#334155;margin-bottom:6px}
+.field label .req{color:var(--danger);margin-left:2px}
+.field input,.field textarea,.field select{width:100%;padding:10px 12px;border:1px solid #cbd5e1;border-radius:10px;font-size:15px;font-family:inherit;background:#fff;outline:none}
+.field input:focus,.field textarea:focus{border-color:var(--primary-light);box-shadow:0 0 0 3px rgba(20,184,166,.15)}
+.field textarea{resize:vertical;min-height:64px}
+.field-hint{font-size:12px;color:var(--muted);margin-top:4px}
+.qrow{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 2px;border-bottom:1px solid #f1f5f9;flex-wrap:wrap}
+.qrow .qlabel{font-size:14px;font-weight:600;flex:1;min-width:200px}
+.qright{display:flex;align-items:center;gap:8px}
+.qstars{white-space:nowrap}
+.star-btn{background:none;border:none;font-size:28px;color:#cbd5e1;cursor:pointer;padding:0 2px;transition:transform .08s,color .1s;line-height:1}
+.star-btn:hover{transform:scale(1.15)}
+.star-btn.on{color:var(--star)}
+.qval{font-size:12px;color:var(--muted);min-width:48px;text-align:right}
+.qval.set{color:var(--primary);font-weight:700}
+.modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:20px}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:20px 16px 30px}
+#toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:#0f172a;color:#fff;padding:10px 20px;border-radius:999px;font-size:14px;opacity:0;pointer-events:none;transition:.3s;z-index:100;box-shadow:0 4px 16px rgba(0,0,0,.25)}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(max-width:520px){
+  .header-inner{flex-direction:column;align-items:flex-start}
+  .score-card{flex-direction:column}
+  .modal{padding:18px}
+  .toolbar-row{flex-direction:column;align-items:stretch}
+  .toolbar-row .left,.toolbar-row .right{justify-content:flex-start}
+  .qavg{grid-template-columns:90px 1fr 36px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <span class="logo">🏥</span>
+      <div>
+        <h1>Эмнэлгийн тойм бичиг</h1>
+        <p>Эмнэлгийн мэдээлэл ба үйлчлүүлэгчдийн 5 шатлалтай үнэлгээ</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <label class="btn btn-secondary btn-small" style="cursor:pointer">📥 Импорт
+        <input type="file" id="importFile" accept=".json,application/json" hidden onchange="handleImport(event)">
+      </label>
+      <button class="btn btn-secondary btn-small" onclick="exportJSON()">📤 Экспорт</button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section id="listView">
+    <div class="toolbar-row">
+      <div class="left">
+        <div class="search-wrap">
+          <span class="sicon">🔍</span>
+          <input type="search" id="searchInput" placeholder="Нэр, чиг үүрэг, хаягаар хайх">
+        </div>
+      </div>
+      <div class="right">
+        <select class="select" id="typeFilter" onchange="renderList()">
+          <option value="">📂 Бүх төрөл</option>
+        </select>
+        <select class="select" id="sortBy" onchange="renderList()">
+          <option value="name_asc">🔤 Нэр (А-Я)</option>
+          <option value="name_desc">🔤 Нэр (Я-А)</option>
+          <option value="type_asc">🏷️ Төрөл (А-Я)</option>
+          <option value="rating_desc">⭐ Үнэлгээ (өндөр→бага)</option>
+          <option value="rating_asc">⭐ Үнэлгээ (бага→өндөр)</option>
+          <option value="count_desc">💬 Саналын тоо (их→бага)</option>
+          <option value="created_desc">🆕 Шинэ нь эхэнд</option>
+        </select>
+        <button class="btn btn-primary" onclick="openHospitalForm()">＋ Эмнэлэг бүртгэх</button>
+      </div>
+    </div>
+    <div class="filter-chips" id="typeChips"></div>
+    <div id="hospitalList"></div>
+  </section>
+  <section id="hospitalDetail" hidden></section>
+</main>
+
+<footer>Өгөгдөл нь зөвхөн таны вэб хөтөч (localStorage) дотор хадгалагдана. Төхөөрөмжөө солиход "Экспорт"-оор нөөцлөнө үү.</footer>
+
+<div id="toast"></div>
+
+<div class="overlay" id="hospModalOverlay" hidden onclick="if(event.target===this)closeModal('hospModalOverlay')">
+  <div class="modal">
+    <h2 id="hospModalTitle">Эмнэлэг бүртгэх</h2>
+    <div id="hospFormBody"></div>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" onclick="closeModal('hospModalOverlay')">Болих</button>
+      <button class="btn btn-primary" onclick="submitHospitalForm()">Хадгалах</button>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="fbModalOverlay" hidden onclick="if(event.target===this)closeModal('fbModalOverlay')">
+  <div class="modal">
+    <h2 id="fbModalTitle">Санал хүсэлт нэмэх</h2>
+    <div id="fbFormBody"></div>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" onclick="closeModal('fbModalOverlay')">Болих</button>
+      <button class="btn btn-primary" onclick="submitFeedbackForm()">Хадгалах</button>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="confirmModalOverlay" hidden>
+  <div class="modal modal-sm">
+    <h2>Баталгаажуулалт</h2>
+    <p id="confirmMsg" style="margin:0 0 4px;font-size:14px;color:#334155"></p>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" onclick="closeModal('confirmModalOverlay')">Болих</button>
+      <button class="btn btn-danger" id="confirmOkBtn">Устгах</button>
+    </div>
+  </div>
+</div>
+
+<script>
+'use strict';
+/* ===== Монгол орчуулга ба тохиргоо ===== */
+var STORAGE_KEY='hospital_review_app_v2';
+var TYPES=[
+  {value:'general',label:'Ерөнхий эмнэлэг'},
+  {value:'ophthalmology',label:'Нүдний эмнэлэг'},
+  {value:'dental',label:'Шүдний эмнэлэг'},
+  {value:'pediatrics',label:'Хүүхдийн эмнэлэг'},
+  {value:'gynecology',label:'Эмэгтэйчүүдийн эмнэлэг'},
+  {value:'cardiology',label:'Зүрхний эмнэлэг'},
+  {value:'dermatology',label:'Арьс өнгөний эмнэлэг'},
+  {value:'orthopedics',label:'Мөчний эмнэлэг'},
+  {value:'ent',label:'Чих, хамар, хоолой'},
+  {value:'neurology',label:'Мэдрэлийн эмнэлэг'},
+  {value:'family_clinic',label:'Гэр бүлийн клиник'},
+  {value:'emergency',label:'Яаралтай тусламж'},
+  {value:'rehab',label:'Нөхөн сэргээх эмчилгээ'},
+  {value:'mental',label:'Сэтгэл зүйн эмнэлэг'},
+  {value:'other',label:'Бусад'}
+];
+var TYPE_BY_VALUE={};
+for(var i=0;i<TYPES.length;i++)TYPE_BY_VALUE[TYPES[i].value]=TYPES[i].label;
+
+var QUESTIONS=[
+  'Хүлээлгийн хугацаа (Бүртгэлээс үзлэг хүртэл)',
+  'Эмчийн тайлбар (Нарийвчлал, ойлгомжтой байдал)',
+  'Ажилтны харилцаа (Бүртгэл, сувилагч)',
+  'Байгууламжийн цэвэр байдал',
+  'Дахин ирэх хүсэл (Үйлчлүүлэхийг хүсэж байна уу)'
+];
+var SHORT_LABELS=['Хүлээлэг','Эмчийн тайлбар','Ажилтан','Цэвэр байдал','Дахин ирэлт'];
+
+/* ===== Туслах функц ===== */
+function $(s){return document.querySelector(s);}
+function $$(s){return Array.prototype.slice.call(document.querySelectorAll(s));}
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,8);}
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function todayStr(){var d=new Date(),p=function(n){return ('0'+n).slice(-2);};return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate());}
+function fmtDate(t){if(!t)return '';var d=new Date(t);if(isNaN(d.getTime()))return String(t);var p=function(n){return ('0'+n).slice(-2);};return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate());}
+
+/* ===== Өгөгдлийн хадгалалт + шилжилт ===== */
+function defaultHospital(){return {id:uid(),name:'',type:'other',address:'',phone:'',memo:'',mapUrl:'',createdAt:Date.now(),feedbacks:[]};}
+function migrateHospital(h){
+  if(!h||typeof h!=='object')return defaultHospital();
+  var out={};
+  out.id=typeof h.id==='string'?h.id:uid();
+  out.name=String(h.name||'');
+  out.type=TYPE_BY_VALUE[h.type]?h.type:'other';
+  out.address=String(h.address||'');
+  out.phone=String(h.phone||'');
+  out.memo=String(h.memo||'');
+  out.mapUrl=String(h.mapUrl||'');
+  if(!out.mapUrl&&out.address){
+    out.mapUrl='https://www.google.com/maps?q='+encodeURIComponent(out.address+' '+out.name)+'&output=embed';
+  }
+  out.createdAt=typeof h.createdAt==='number'?h.createdAt:Date.now();
+  out.feedbacks=(Array.isArray(h.feedbacks)?h.feedbacks:[]).filter(function(f){return f&&Array.isArray(f.ratings);}).map(function(f){
+    var r=f.ratings.slice(0,5).map(function(x){var n=Math.round(Number(x));return isNaN(n)?1:Math.min(5,Math.max(1,n));});
+    while(r.length<5)r.push(1);
+    return {id:typeof f.id==='string'?f.id:uid(),date:String(f.date||''),ratings:r,comment:String(f.comment||'')};
+  });
+  return out;
+}
+function loadData(){
+  // v2 → шууд
+  try{var raw=localStorage.getItem(STORAGE_KEY);if(raw){var d=JSON.parse(raw);if(d&&Array.isArray(d.hospitals))return {hospitals:d.hospitals.map(migrateHospital)};}}catch(e){}
+  // v1 → шилжүүлэх
+  try{var old=localStorage.getItem('hospital_review_app_v1');if(old){var od=JSON.parse(old);if(od&&Array.isArray(od.hospitals)){var mig=od.hospitals.map(migrateHospital);localStorage.setItem(STORAGE_KEY,JSON.stringify({hospitals:mig}));return {hospitals:mig};}}}catch(e){}
+  return {hospitals:[]};
+}
+function saveData(){
+  try{
+    var cleaned={hospitals:data.hospitals.map(function(h){
+      return {id:h.id,name:h.name,type:h.type||'other',address:h.address||'',phone:h.phone||'',memo:h.memo||'',mapUrl:h.mapUrl||'',createdAt:h.createdAt||Date.now(),feedbacks:(h.feedbacks||[])};
+    })};
+    localStorage.setItem(STORAGE_KEY,JSON.stringify(cleaned));
+  }catch(e){}
+}
+var data=loadData();
+var currentHospitalId=null;
+var currentEditHospitalId=null;
+var currentFeedbackEditId=null;
+var ratingVals=[0,0,0,0,0];
+var currentTypeFilter='';
+
+/* ===== Тооцоолол (5 оноо хүртэл) ===== */
+function calcStats(hospital){
+  var fb=hospital.feedbacks||[];
+  var count=fb.length;
+  var qSum=[0,0,0,0,0];
+  var total=0,n=0;
+  for(var i=0;i<fb.length;i++){
+    var r=fb[i].ratings||[];
+    for(var j=0;j<QUESTIONS.length;j++){
+      var v=Number(r[j]);
+      if(!v)continue;
+      qSum[j]+=v;total+=v;n++;
+    }
+  }
+  var qAvg=qSum.map(function(s){return count?Math.round(s/count*10)/10:0;});
+  var overall=n?Math.round(total/n*10)/10:null;
+  return {count:count,qAvg:qAvg,overall:overall,total:total,n:n};
+}
+function fbScore(f){
+  var r=f.ratings||[],t=0,n=0;
+  for(var i=0;i<r.length;i++){var v=Number(r[i]);if(v){t+=v;n++;}}
+  return n?Math.round(t/n*10)/10:null;
+}
+
+/* ===== Одны дүрслэл ===== */
+function starsHTML(score,big){
+  if(score==null)return'<span class="no-score">Үнэлгээгүй</span>';
+  var pct=(score/5*100).toFixed(1);
+  return '<span class="stars'+(big?' stars-big':'')+'">'
+    +'<span class="stars-bg">★★★★★</span>'
+    +'<span class="stars-fg" style="width:'+pct+'%"><i>★★★★★</i></span>'
+    +'</span>';
+}
+function typeLabel(v){return TYPE_BY_VALUE[v]||TYPE_BY_VALUE.other;}
+
+/* ===== Жагсаалт ===== */
+var searchQuery='';
+function setTypeFilter(v){currentTypeFilter=v;renderList();}
+function renderTypeChips(){
+  var html='<span class="filter-chip'+(!currentTypeFilter?' active':'')+'" onclick="setTypeFilter(\'\')">📂 Бүгд</span>';
+  for(var i=0;i<TYPES.length;i++){
+    if(TYPES[i].value==='other')continue;
+    html+='<span class="filter-chip'+(currentTypeFilter===TYPES[i].value?' active':'')+'" onclick="setTypeFilter(\''+TYPES[i].value+'\')">'+esc(TYPES[i].label)+'</span>';
+  }
+  document.getElementById('typeChips').innerHTML=html;
+}
+function renderList(){
+  currentHospitalId=null;
+  renderTypeChips();
+  var q=String(searchQuery||'').trim().toLowerCase();
+  var sortVal=(document.getElementById('sortBy')||{}).value||'name_asc';
+  var list=data.hospitals.filter(function(h){
+    if(currentTypeFilter&&h.type!==currentTypeFilter)return false;
+    if(!q)return true;
+    return ((h.name||'')+' '+(typeLabel(h.type))+' '+(h.address||'')+' '+(h.phone||'')).toLowerCase().indexOf(q)>-1;
+  });
+  var statMap={};
+  for(var i=0;i<list.length;i++)statMap[list[i].id]=calcStats(list[i]);
+  var tlbl=function(h){return typeLabel(h.type);};
+  list.sort(function(a,b){
+    switch(sortVal){
+      case 'name_desc':return (b.name||'').localeCompare(a.name||'','mn');
+      case 'type_asc':return (tlbl(a)+' '+(a.name||'')).localeCompare(tlbl(b)+' '+(b.name||''),'mn');
+      case 'rating_desc':return (statMap[b.id].overall||-1)-(statMap[a.id].overall||-1);
+      case 'rating_asc':return (statMap[a.id].overall||999)-(statMap[b.id].overall||999);
+      case 'count_desc':return statMap[b.id].count-statMap[a.id].count;
+      case 'created_desc':return (b.createdAt||0)-(a.createdAt||0);
+      case 'name_asc':
+      default:return (a.name||'').localeCompare(b.name||'','mn');
+    }
+  });
+  var box=document.getElementById('hospitalList');
+  if(!list.length){
+    var hasAny=data.hospitals.length>0;
+    box.innerHTML='<div class="empty">'
+      +(hasAny
+        ?'<div class="big">🔍</div><h3>Тохирох эмнэлэг олдсонгүй</h3><p>Хайлтын нөхцөлөө өөрчилж дахин оролдоно уу.</p>'
+        :'<div class="big">🏥</div><h3>Эмнэлэг бүртгэж, тойм хуримтлуулцгаая</h3><ol><li>"＋ Эмнэлэг бүртгэх" дээр дарж мэдээлэл оруулна (нэр, төрөл, хаяг, утас, Google Maps)</li><li>Үйлчлүүлэгчдээс 5 шатлалтай үнэлгээ авна</li><li>Ерөнхий оноо (5 хүртэл) болон саналын тоо автоматаар тооцоологдоно</li></ol>')
+      +'</div>';
+  }else{
+    box.innerHTML=list.map(function(h){
+      var st=statMap[h.id];
+      var score=st.overall!=null?st.overall.toFixed(1):'—';
+      var tl=typeLabel(h.type);
+      return '<div class="hcard" onclick="openDetail(\''+h.id+'\')">'
+        +'<div class="chips"><span class="chip chip-type">🏷️ '+esc(tl)+'</span></div>'
+        +'<h3>'+esc(h.name)+'</h3>'
+        +'<div class="addr">📍 '+(h.address?esc(h.address):'<span style="opacity:.6">Хаяг бүртгэгдээгүй</span>')+'</div>'
+        +(h.phone?'<div class="addr">📞 '+esc(h.phone)+'</div>':'')
+        +'<div class="score-row"><div>'+starsHTML(st.overall,false)+' <span class="score-num">'+score+'<span class="unit"> / 5</span></span></div>'
+        +'<span class="count-badge">'+st.count+' санал</span></div>'
+        +'</div>';
+    }).join('');
+  }
+  document.getElementById('listView').hidden=false;
+  document.getElementById('hospitalDetail').hidden=true;
+}
+
+/* ===== Дэлгэрэнгүй харах ===== */
+function getHospital(id){for(var i=0;i<data.hospitals.length;i++)if(data.hospitals[i].id===id)return data.hospitals[i];return null;}
+function openDetail(id){var h=getHospital(id);if(!h)return;currentHospitalId=id;renderDetail();}
+function showList(){renderList();}
+function buildMapHTML(h){
+  var mapUrl=h.mapUrl;
+  if(!mapUrl&&h.address){
+    mapUrl='https://www.google.com/maps?q='+encodeURIComponent((h.address+' '+(h.name||'')))+'&output=embed';
+  }
+  if(!mapUrl)return '<div class="map-wrap"><div class="map-empty"><div style="font-size:32px">🗺️</div><div>Хаяг оруулснаар Google Maps харагдана</div></div></div>';
+  var external='https://www.google.com/maps?q='+encodeURIComponent((h.address+' '+(h.name||'')).trim()?((h.address+' '+(h.name||'')).trim()):h.name)+'&output=classic';
+  return '<div class="map-wrap"><iframe src="'+esc(mapUrl)+'" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><a class="map-link" href="'+esc(external)+'" target="_blank" rel="noopener">Google Maps-д нээх ↗</a></div>';
+}
+function renderDetail(){
+  var h=getHospital(currentHospitalId);
+  if(!h){renderList();return;}
+  var st=calcStats(h);
+  var tl=typeLabel(h.type);
+  var qavgHTML;
+  if(st.count===0){
+    qavgHTML='<p style="color:var(--muted);font-size:13px;margin:0">Санал хүсэлт ирсний дараа шатлал тус бүрийн дундаж харагдана.</p>';
+  }else{
+    qavgHTML=SHORT_LABELS.map(function(label,i){
+      var v=st.qAvg[i].toFixed(1);
+      var w=Math.max(0,Math.min(100,st.qAvg[i]/5*100));
+      return '<div class="qavg"><span>'+label+'</span><div class="bar"><div class="bar-fill" style="width:'+w+'%"></div></div><span class="val">'+v+'</span></div>';
+    }).join('');
+  }
+  var fbs=(h.feedbacks||[]).slice().reverse().map(function(f){
+    var sc=fbScore(f);
+    var ratingsHTML='<div class="fb-ratings">'+SHORT_LABELS.map(function(l,i){
+      var v=f.ratings&&f.ratings[i]?f.ratings[i]:'–';
+      return '<span class="fb-rating">'+l+' <b>'+v+'</b></span>';
+    }).join('')+'</div>';
+    return '<div class="fb-item">'
+      +'<div class="fb-top"><span class="fb-date">📅 '+(f.date?esc(f.date):'Огноо тодорхойгүй')+'</span>'
+      +starsHTML(sc,false)
+      +(sc!=null?'<span class="fb-score">'+sc.toFixed(1)+' / 5</span>':'')
+      +'<span style="flex:1"></span>'
+      +'<button class="icon-btn" title="Засварлах" onclick="openFeedbackForm(\''+f.id+'\')">✏️</button>'
+      +'<button class="icon-btn" title="Устгах" onclick="deleteFeedback(\''+f.id+'\')">🗑️</button>'
+      +'</div>'+ratingsHTML
+      +(f.comment?'<p class="fb-comment">'+esc(f.comment)+'</p>':'')
+      +'</div>';
+  }).join('');
+  var fbBody=st.count?fbs:'<p style="color:var(--muted);font-size:13px">Одоогоор санал хүсэлт байхгүй байна. "＋ Нэмэх" дээр дарж 5 шатлалтай үнэлгээ бүртгэнэ үү.</p>';
+  var html='<button class="back-btn" onclick="showList()">← Жагсаалт руу буцах</button>'
+    +'<div class="card">'
+      +'<div class="detail-head"><div>'
+        +'<h2>'+esc(h.name)+'</h2>'
+        +'<div class="chips"><span class="chip chip-type">🏷️ '+esc(tl)+'</span></div>'
+        +'<div class="info-rows">'
+          +'<div><span class="lbl">Хаяг</span>'+(h.address?esc(h.address):'Бүртгэгдээгүй')+'</div>'
+          +'<div><span class="lbl">Утас</span>'+(h.phone?esc(h.phone):'Бүртгэгдээгүй')+'</div>'
+          +(h.memo?'<div><span class="lbl">Тэмдэглэл</span>'+esc(h.memo)+'</div>':'')
+          +'<div><span class="lbl">Бүртгэсэн</span>'+fmtDate(h.createdAt)+'</div>'
+        +'</div>'
+      +'</div>'
+      +'<div style="display:flex;gap:8px">'
+        +'<button class="btn btn-secondary btn-small" onclick="openHospitalForm(\''+h.id+'\')">✏️ Засварлах</button>'
+        +'<button class="btn btn-danger btn-small" onclick="deleteHospital(\''+h.id+'\')">🗑️ Устгах</button>'
+      +'</div></div>'
+    +'</div>'
+    +'<div class="card">'+buildMapHTML(h)+'</div>'
+    +'<div class="card score-card">'
+      +'<div class="score-main"><div class="score-big">'+(st.overall!=null?st.overall.toFixed(1):'—')+'<span class="unit"> / 5</span></div>'
+      +starsHTML(st.overall,true)
+      +'<div style="font-size:13px;color:var(--muted);margin-top:8px">'+st.count+' саналын тоо</div></div>'
+      +'<div class="qavg-list">'+qavgHTML+'</div>'
+    +'</div>'
+    +'<div class="card"><div class="section-title"><h3>📝 Санал хүсэлт (5 шатлалт үнэлгээ)</h3>'
+      +'<button class="btn btn-primary btn-small" onclick="openFeedbackForm()">＋ Нэмэх</button></div>'
+      +fbBody
+    +'</div>';
+  document.getElementById('hospitalDetail').innerHTML=html;
+  document.getElementById('hospitalDetail').hidden=false;
+  document.getElementById('listView').hidden=true;
+  window.scrollTo(0,0);
+}
+
+/* ===== Модал ===== */
+function closeModal(id){document.getElementById(id).hidden=true;}
+function openConfirm(msg,onYes){
+  document.getElementById('confirmMsg').textContent=msg;
+  var btn=document.getElementById('confirmOkBtn');
+  btn.textContent='Устгах';
+  btn.onclick=function(){closeModal('confirmModalOverlay');if(onYes)onYes();};
+  document.getElementById('confirmModalOverlay').hidden=false;
+}
+
+/* ===== Эмнэлгийн мэдээллийн форм ===== */
+function openHospitalForm(id){
+  currentEditHospitalId=id||null;
+  var h=id?getHospital(id):null;
+  if(!h){h=defaultHospital();}
+  document.getElementById('hospModalTitle').textContent=h.id&&getHospital(h.id)?'Эмнэлгийн мэдээлэл засварлах':'Эмнэлэг бүртгэх';
+  var typeOptions=TYPES.map(function(t){return '<option value="'+t.value+'"'+(h.type===t.value?' selected':'')+'>'+esc(t.label)+'</option>';}).join('');
+  document.getElementById('hospFormBody').innerHTML=
+    '<div class="field"><label>Эмнэлгийн нэр<span class="req">шаардлагатай</span></label><input id="hf-name" maxlength="120" placeholder="Жнь: Нөхөрлөлийн ерөнхий эмнэлэг" value="'+esc(h.name)+'"></div>'
+    +'<div class="field"><label>Төрөл</label><select id="hf-type">'+typeOptions+'</select><div class="field-hint">Эмнэлгийн чиглэлээ сонгоно уу (нүд, шүд, ерөнхий г.м.)</div></div>'
+    +'<div class="field"><label>Хаяг</label><input id="hf-address" maxlength="200" placeholder="Жнь: Сүхбаатар дүүрэг, 1-р хороо…" value="'+esc(h.address)+'"></div>'
+    +'<div class="field"><label>Google Maps URL (заавал биш)</label><input id="hf-mapUrl" maxlength="500" placeholder="https://www.google.com/maps/…" value="'+esc(h.mapUrl)+'"><div class="field-hint">Хаяг оруулбал автоматаар Google Maps харуулна. URL-ыг гараар оруулж болно.</div></div>'
+    +'<div class="field"><label>Утас</label><input id="hf-phone" maxlength="30" placeholder="Жнь: 7700-1234" value="'+esc(h.phone)+'"></div>'
+    +'<div class="field"><label>Тэмдэглэл</label><textarea id="hf-memo" maxlength="1000" placeholder="Ажиллах цаг, чиглэл, онцлог зүйл">'+esc(h.memo)+'</textarea></div>';
+  document.getElementById('hospModalOverlay').hidden=false;
+  setTimeout(function(){var n=document.getElementById('hf-name');if(n)n.focus();},50);
+}
+function submitHospitalForm(){
+  var name=document.getElementById('hf-name').value.trim();
+  if(!name){alert('Эмнэлгийн нэрийг оруулна уу.');document.getElementById('hf-name').focus();return;}
+  var type=document.getElementById('hf-type').value;
+  var address=document.getElementById('hf-address').value.trim();
+  var mapUrl=document.getElementById('hf-mapUrl').value.trim();
+  var phone=document.getElementById('hf-phone').value.trim();
+  var memo=document.getElementById('hf-memo').value.trim();
+  if(!mapUrl&&address){
+    mapUrl='https://www.google.com/maps?q='+encodeURIComponent(address+' '+name)+'&output=embed';
+  }
+  if(currentEditHospitalId){
+    var h=getHospital(currentEditHospitalId);
+    if(h){h.name=name;h.type=type;h.address=address;h.mapUrl=mapUrl;h.phone=phone;h.memo=memo;}
+  }else{
+    var nh=defaultHospital();
+    nh.name=name;nh.type=type;nh.address=address;nh.mapUrl=mapUrl;nh.phone=phone;nh.memo=memo;
+    data.hospitals.push(nh);
+  }
+  saveData();
+  var wasEdit=!!currentEditHospitalId;
+  closeModal('hospModalOverlay');
+  render();
+  toast(wasEdit?'Эмнэлгийн мэдээлэл шинэчлэгдлээ':'Эмнэлэг бүртгэгдлээ');
+}
+
+/* ===== Санал хүсэлтийн форм ===== */
+function openFeedbackForm(fid){
+  currentFeedbackEditId=fid||null;
+  var h=getHospital(currentHospitalId);
+  if(!h)return;
+  var f=fid?(h.feedbacks||[]).filter(function(x){return x.id===fid;})[0]:null;
+  document.getElementById('fbModalTitle').textContent=f?'Санал хүсэлт засварлах':'Санал хүсэлт нэмэх';
+  ratingVals=f?f.ratings.slice():[0,0,0,0,0];
+  var qHTML=QUESTIONS.map(function(label,i){
+    return '<div class="qrow"><div class="qlabel">'+(i+1)+'. '+esc(label)+'</div>'
+      +'<div class="qright"><div class="qstars" id="qstars-'+i+'">'
+      +[1,2,3,4,5].map(function(v){return '<button type="button" class="star-btn" onclick="setRating('+i+','+v+')">★</button>';}).join('')
+      +'</div><span class="qval" id="qval-'+i+'">Сонгоогүй</span></div></div>';
+  }).join('');
+  document.getElementById('fbFormBody').innerHTML=
+    '<div class="field"><label>Үнэлгээ өгсөн өдөр</label><input type="date" id="ff-date" value="'+(f&&f.date?esc(f.date):todayStr())+'"></div>'
+    +qHTML
+    +'<p class="field-hint">※ 5 шатлалын бүгдийг 1-5 одоор үнэлнэ (1 = муу, 5 = сайн)</p>'
+    +'<div class="field" style="margin-top:12px"><label>Сэтгэгдэл (заавал биш)</label><textarea id="ff-comment" maxlength="1000" placeholder="Хүлээлэг, эмчийн сэтгэл ханамж гэх мэт">'+esc(f?f.comment:'')+'</textarea></div>';
+  refreshRatingUI();
+  document.getElementById('fbModalOverlay').hidden=false;
+}
+function setRating(q,v){ratingVals[q]=v;refreshRatingUI();}
+function refreshRatingUI(){
+  for(var q=0;q<5;q++){
+    var btns=$$('#qstars-'+q+' .star-btn');
+    for(var i=0;i<btns.length;i++)btns[i].classList.toggle('on',i<ratingVals[q]);
+    var el=document.getElementById('qval-'+q);
+    el.textContent=ratingVals[q]?String(ratingVals[q]):'Сонгоогүй';
+    el.classList.toggle('set',!!ratingVals[q]);
+  }
+}
+function submitFeedbackForm(){
+  for(var i=0;i<5;i++)if(!ratingVals[i]){alert('Бүх 5 шатлалыг 1-5 одоор үнэлнэ үү.');return;}
+  var h=getHospital(currentHospitalId);
+  if(!h)return;
+  h.feedbacks=h.feedbacks||[];
+  var date=document.getElementById('ff-date').value||todayStr();
+  var comment=document.getElementById('ff-comment').value.trim();
+  if(currentFeedbackEditId){
+    var f=h.feedbacks.filter(function(x){return x.id===currentFeedbackEditId;})[0];
+    if(f){f.date=date;f.ratings=ratingVals.slice();f.comment=comment;toast('Санал хүсэлт шинэчлэгдлээ');}
+  }else{
+    h.feedbacks.push({id:uid(),date:date,ratings:ratingVals.slice(),comment:comment});
+    toast('Санал хүсэлт нэмэгдлээ');
+  }
+  saveData();
+  closeModal('fbModalOverlay');
+  renderDetail();
+}
+
+/* ===== Устгах ===== */
+function deleteHospital(id){
+  var h=getHospital(id);
+  if(!h)return;
+  openConfirm('"'+h.name+'" эмнэлгийг устгах уу? Холбогдох саналууд ('+(h.feedbacks||[]).length+'ш) мөн устана.',function(){
+    data.hospitals=data.hospitals.filter(function(x){return x.id!==id;});
+    saveData();
+    renderList();
+    toast('Эмнэлэг устгагдлаа');
+  });
+}
+function deleteFeedback(fid){
+  var h=getHospital(currentHospitalId);
+  if(!h)return;
+  openConfirm('Энэ саналыг устгах уу? Хадгалсны дараа дундаж дахин тооцоологдоно.',function(){
+    h.feedbacks=(h.feedbacks||[]).filter(function(x){return x.id!==fid;});
+    saveData();
+    renderDetail();
+    toast('Санал хүсэлт устгагдлаа');
+  });
+}
+
+/* ===== Экспорт / Импорт ===== */
+function exportJSON(){
+  var payload={app:'hospital-review-app',version:2,exportedAt:new Date().toISOString(),hospitals:data.hospitals};
+  var blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
+  var a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='Эмнэлгийн_тойм_нөөц_'+todayStr()+'.json';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(function(){URL.revokeObjectURL(a.href);},1000);
+  toast('JSON файл экспортлогдлоо');
+}
+function handleImport(e){
+  var file=e.target.files&&e.target.files[0];
+  if(!file)return;
+  var reader=new FileReader();
+  reader.onload=function(){
+    try{
+      var payload=JSON.parse(reader.result);
+      if(!payload||!Array.isArray(payload.hospitals))throw new Error('invalid');
+      var arr=payload.hospitals.map(migrateHospital);
+      openConfirm('Одоогийн өгөгдөл ('+data.hospitals.length+'-ш) импортлосон өгөгдөл ('+arr.length+'-ш)-оор солих уу?',function(){
+        data.hospitals=arr;
+        saveData();
+        render();
+        toast(arr.length+' эмнэлэг импортлогдлоо');
+      });
+    }catch(err){
+      alert('Импорт амжилтгүй боллоо. Энэ апп-аас экспортолсон JSON файлыг сонгоно уу.');
+    }
+  };
+  reader.readAsText(file);
+  e.target.value='';
+}
+
+/* ===== Тост ба эхлүүлэл ===== */
+var toastTimer;
+function toast(msg){
+  var t=document.getElementById('toast');
+  t.textContent=msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer=setTimeout(function(){t.classList.remove('show');},2400);
+}
+// Шүүлтүүрийн dropdown-д төрлүүдийг нэмэх
+(function initTypeFilter(){
+  var sel=document.getElementById('typeFilter');
+  if(sel){
+    TYPES.forEach(function(t){
+      var opt=document.createElement('option');
+      opt.value=t.value;
+      opt.textContent='🏷️ '+t.label;
+      sel.appendChild(opt);
+    });
+  }
+})();
+document.getElementById('searchInput').addEventListener('input',function(e){
+  searchQuery=this.value;
+  if(currentHospitalId)currentHospitalId=null;
+  renderList();
+});
+function render(){if(currentHospitalId)renderDetail();else renderList();}
+render();
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
+</body>
+</html>
